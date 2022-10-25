@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace EX13.b
+namespace Ex13
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            /* Fes un programa que passi una lletra a majúscules i viceversa*/
+            /* Fes un programa que passi una lletra a majúscules. Si no és minúscula no ha de fer res.*/
 
             char letra, letraModificada;
-             
+
             Console.WriteLine("Introduce una letra:");
             letra = Convert.ToChar(Console.ReadLine());
 
@@ -22,8 +22,8 @@ namespace EX13.b
 
             else if (letra >= 'A' && letra <= 'Z')
             {
-                letraModificada = (char)(letra + 32);
-                Console.WriteLine($"La letra {letra} mayuscula pasa  a minuscula como {letraModificada}");
+                
+                Console.WriteLine($"La letra {letra} no es minuscula");
 
             }
 
