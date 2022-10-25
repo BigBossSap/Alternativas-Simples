@@ -13,15 +13,12 @@ namespace Ex11
             Console.WriteLine("Introduce una letra: ");
             letra = Convert.ToChar(Console.ReadLine());
 
-           
+
 
             if ((letra == 'a') || (letra == 'e') || (letra == 'i') || (letra == 'o') || (letra == 'u'))
                 Console.WriteLine($"{letra} es una vocal");
             else
                 Console.WriteLine($"{letra} no es una vocal");
-
-            
-
 
         }
     }
