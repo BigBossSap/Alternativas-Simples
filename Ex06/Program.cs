@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ordre_creixent_o_decreixent
+namespace Ex06
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -18,17 +18,10 @@ namespace ordre_creixent_o_decreixent
 
             if (num1 > num2)
                 Console.WriteLine("Decreciente");
-         
-             else
+            else if (num1 == num2)
+                Console.WriteLine("Iguales");
+            else
                 Console.WriteLine("Creciente");
-
-
-
-
-
-
-
-
         }
     }
 }

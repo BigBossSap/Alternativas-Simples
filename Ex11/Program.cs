@@ -1,29 +1,28 @@
-﻿// See https://aka.ms/new-console-template for more information
-//DV
+﻿using System;
 
-int hores;
-double preuHora, irpf, salarioBruto, retencion, sueldoNeto;
+namespace Ex11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*  Fes un programa que demani una lletra i digui si és o no una vocal.*/
+
+            char letra;
+
+            Console.WriteLine("Introduce una letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+
+           
+
+            if ((letra == 'a') || (letra == 'e') || (letra == 'i') || (letra == 'o') || (letra == 'u'))
+                Console.WriteLine($"{letra} es una vocal");
+            else
+                Console.WriteLine($"{letra} no es una vocal");
+
+            
 
 
-//Valores
-
-Console.WriteLine("Horas trabajadas: ");
-hores = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Precio por hora: ");
-preuHora = Convert.ToDouble(Console.ReadLine());
-
-Console.WriteLine("% de IRPF: ");
-irpf = Convert.ToDouble(Console.ReadLine());
-
-//Algoritmos
-
-salarioBruto = hores * preuHora;
-
-retencion = salarioBruto * irpf / 100;
-
-sueldoNeto = salarioBruto - retencion;
-
-Console.WriteLine("Salario Bruto: " + salarioBruto);
-Console.WriteLine("Retención: " + retencion);
-Console.WriteLine("Salario Neto: " + sueldoNeto);
+        }
+    }
+}
