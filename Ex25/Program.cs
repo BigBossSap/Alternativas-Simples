@@ -24,8 +24,13 @@ de les variables si cal.
                 Console.WriteLine($"Orden creciente {num3} , {num2} , {num1}");
             else if (num1 <= num2 && num1 <= num3 && num2 <= num3)
                 Console.WriteLine($"Orden creciente {num1} , {num2} , {num3}");
-            else 
+            else  if (num2 >= num1 && num2 >= num3 && num1>=3)
                 Console.WriteLine($"Orden creciente {num3} , {num1} , {num2}");
+            else if (num3>=num2 && num1>=num2)
+                Console.WriteLine($"Orden creciente {num2} , {num1} , {num3}");
+            else
+                Console.WriteLine(($"Orden creciente {num2} , {num3} , {num1}");
+
 
 
 
