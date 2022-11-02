@@ -8,12 +8,16 @@ namespace Ex23
         {
             /*23. Fes un programa que donat un nombre de 2 xifres (té 2 xifres), digui si és cap-i-cua*/
 
-            int num;
+            int num, num1,num2;
             
             Console.WriteLine("Introduce un numero de 2 cifras: ");
             num = Convert.ToInt32(Console.ReadLine());
-
-            if (num)
+            num1 = num / 10;
+            num2 = num % 10;
+            if (num1 == num2)
+                Console.WriteLine("Es cap i cua");
+            else
+                Console.WriteLine("No es cap i cua");
 
         }
     }

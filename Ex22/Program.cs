@@ -28,22 +28,24 @@ sortida i minut de sortida. Suposem que tarifiquem dintre del mateix dia.*/
 
 
 
-            horaTotal = (int)((hora - horaSalida) * -1);
-            minutosTotal = (int)((minutos - minutoSalida) * -1);    
-            Console.WriteLine($"Tu tiempo total ha sido de {horaTotal} horas y {minutosTotal} minutos");
+            horaTotal = horaSalida - horaEntrada;
+            minutosTotal = minutoSalida - minutosEntrada;
 
-            if (horaTotal >= 0 && horaTotal <= 24)
-            {
-                precioHora = horaTotal;
-                Console.WriteLine($"Tu precio por hora es: {precioHora}");
 
-                if (horaTotal >= 0 && horaTotal <= 24 && minutosTotal >= 1)
-                {
-                    precioFinal = (int)precioHora + 1;
-                    precioHora = horaTotal;
-                    Console.WriteLine($"Precio final: {precioFinal} euros");
-                }
+            if (minutosTotal < 0) {
+                horaTotal--;
+                minutosTotal += 60;
             }
+
+            precioFinal = horaTotal * 1;
+
+            if (minutosTotal > 0)
+                precioFinal++;
+
+            Console.WriteLine($"Tu precio final es de {precioFinal}");
+            
+
+
 
 
                 
