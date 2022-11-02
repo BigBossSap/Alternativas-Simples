@@ -11,14 +11,14 @@ dir que si estic 3 hores pago 3€, i si estic 3 hores i cinc minuts pago 4€. 
 entrar les dades demana separadament l’hora d’entrada, el minut d’entrada, hora de
 sortida i minut de sortida. Suposem que tarifiquem dintre del mateix dia.*/
 
-            int hora, minutos, horaSalida, minutoSalida, horaTotal, minutosTotal, precioHora, precioFinal;
+            int horaEntrada, minutosEntrada, horaSalida, minutoSalida, horaTotal, minutosTotal, precioHora, precioFinal;
 
 
             Console.WriteLine("Hora de entrada: ");
-            hora = Convert.ToInt32(Console.ReadLine());
+            horaEntrada = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Minuto de entrada: ");
-            minutos = Convert.ToInt32(Console.ReadLine());
+            minutosEntrada = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Hora de salida: ");
             horaSalida = Convert.ToInt32(Console.ReadLine());
