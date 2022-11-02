@@ -25,7 +25,7 @@ gran.*/
             if (num1 < num3)
                 num1 = num3;
 
-            Console.WriteLine(num1);
+            Console.WriteLine($"El numero mas grande es: {num1}");
 
                     
         }

@@ -32,6 +32,7 @@ namespace Ex27
             if (num<1 || num>7)
                 Console.WriteLine("Número incorrecto!");
 
+
         }
     }
 }

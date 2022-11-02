@@ -20,8 +20,6 @@ sortida i minut de sortida. Suposem que tarifiquem dintre del mateix dia.*/
             Console.WriteLine("Minuto de entrada: ");
             minutos = Convert.ToInt32(Console.ReadLine());
 
-            
-
             Console.WriteLine("Hora de salida: ");
             horaSalida = Convert.ToInt32(Console.ReadLine());
 
@@ -37,11 +35,14 @@ sortida i minut de sortida. Suposem que tarifiquem dintre del mateix dia.*/
             if (horaTotal >= 0 && horaTotal <= 24)
             {
                 precioHora = horaTotal;
+                Console.WriteLine($"Tu precio por hora es: {precioHora}");
 
-                else if (minutosTotal >= 1)
+                if (horaTotal >= 0 && horaTotal <= 24 && minutosTotal >= 1)
+                {
                     precioFinal = (int)precioHora + 1;
-                Console.WriteLine($"Precio final: {precioFinal}");
-
+                    precioHora = horaTotal;
+                    Console.WriteLine($"Precio final: {precioFinal} euros");
+                }
             }
 
 

@@ -30,7 +30,7 @@ namespace Ex20
             else if (dia == 1)
                 Console.WriteLine($"El precio es {5*0.80} euros");
             else{
-                Console.WriteLine("Tienert Carnet Jove? s/n");
+                Console.WriteLine("Tienes Carnet Jove? s/n");
                 carnetJove = Convert.ToChar(Console.ReadLine());
                 if (carnetJove == 's')
                     Console.WriteLine($"El precio de la entrada es {5*0.85}");
