@@ -16,6 +16,17 @@ namespace Ex09
             Console.WriteLine("Introduce en angulo 0 - 360: ");
             angulo = Convert.ToInt32(Console.ReadLine());
 
+            if (angulo < 0 || angulo > 360)
+                Console.WriteLine("Error");
+            else if (angulo > 0 && angulo<90)
+                Console.WriteLine("1rQ");
+            else if (angulo >= 90 && angulo<180)
+                Console.WriteLine("2nQ");
+            else if (angulo>=180 && angulo<270)
+                Console.WriteLine("3rQ");
+            else
+                Console.WriteLine("4tQ");
+
 
 
 
