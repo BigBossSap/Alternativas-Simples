@@ -13,7 +13,7 @@ namespace Ex09
 
             int angulo;
 
-            Console.WriteLine("Introduce en angulo: ");
+            Console.WriteLine("Introduce en angulo 0 - 360: ");
             angulo = Convert.ToInt32(Console.ReadLine());
 
 

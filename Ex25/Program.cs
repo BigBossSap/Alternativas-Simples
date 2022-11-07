@@ -11,7 +11,7 @@ de les variables si cal.
 */
 
 
-            double num1, num2, num3;
+            double num1, num2, num3, aux;
 
             Console.WriteLine("num1: ");
             num1 = Convert.ToDouble(Console.ReadLine());
@@ -20,21 +20,32 @@ de les variables si cal.
             Console.WriteLine("num3: ");
             num3 = Convert.ToDouble(Console.ReadLine());
 
-            if (num1 >= num2 && num1 >= num3 && num2>= num3)
-                Console.WriteLine($"Orden creciente {num3} , {num2} , {num1}");
-            else if (num1 <= num2 && num1 <= num3 && num2 <= num3)
-                Console.WriteLine($"Orden creciente {num1} , {num2} , {num3}");
-            else  if (num2 >= num1 && num2 >= num3 && num1>=3)
-                Console.WriteLine($"Orden creciente {num3} , {num1} , {num2}");
-            else if (num3>=num2 && num1>=num2)
-                Console.WriteLine($"Orden creciente {num2} , {num1} , {num3}");
-            else
-                Console.WriteLine(($"Orden creciente {num2} , {num3} , {num1}");
+            
+            if (num2 < num1)
+            {
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
+            
+            }
 
+            if (num3 < num2) 
+            {
 
+                aux = num2;
+                num2 = num3;
+                num3 = aux;
+            }
 
+            if (num2 < num1)
+            {
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
 
+            }
 
+            Console.WriteLine($"Numeros ordenados: {num1}, {num2}, {num3}");
 
         }
     }
