@@ -6,6 +6,15 @@ namespace ecuacion_2ndo_grado_net_4._0
     {
         static void Main(string[] args)
         {
+            /*Fes un programa que calculi les solucions d’una equació de segon grau i que no falli mai.
+No es poden fer arrels de valors negatius ni divisions per 0.
+ax
+2
++bx+c=0 → x=
+−b±√b
+2−4 ac
+2 a
+*/
             double a, b, c;
 
             double sol1, sol2;

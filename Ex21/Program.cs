@@ -24,15 +24,15 @@ entre 0 i 59.*/
             { 
                 segundos++;
 
-            if (segundos == 60)
+            if (segundos > 59)
                     
                 {
                     minutos++;
                 segundos = 0;
-                    Console.WriteLine($"La hora final es {hora} horas, {minutos} minutos , {segundos} segundos");
+                    
 
                 }
-                if (minutos == 60)
+                if (minutos > 59)
                 {
                     minutos = 0;
                     hora++;

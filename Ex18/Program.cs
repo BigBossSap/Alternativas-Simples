@@ -28,7 +28,7 @@ namespace Ex18
             else if (nota == 10)
                 Console.WriteLine("Excelente");
             else
-                Console.WriteLine("Nota introducida incorrecta 0/10");
+                Console.WriteLine("Nota introducida incorrecta");
 
 
 

@@ -14,7 +14,7 @@ namespace ex08
             double res1, res2, res3, res4;
 
 
-            Console.WriteLine("Introduce la operación a realizar +,-,*,/)");
+            Console.WriteLine("Introduce la operación a realizar (+,-,*,/)");
             operativo = Console.ReadLine();
             Console.WriteLine("Primer numero");
             a = Convert.ToDouble(Console.ReadLine());

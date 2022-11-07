@@ -30,7 +30,7 @@ múltiples de 400 com el 2000(1900 no va ser de traspàs).*/
                 Console.WriteLine($"{year} no es un año de traspaso");
 
 
-            // if (year%400==0 !! year%100!=0 && year%4==0)0
+           
         
 
 

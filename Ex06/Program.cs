@@ -6,7 +6,8 @@ namespace Ex06
     {
         static void Main(string[] args)
         {
-            //Fes un programa que ens digui si dos números han estat introduits en ordre creixent
+            /*Fes un programa que ens digui en quin ordre s’han introduit dos nombres pel teclat
+(creixent, decreixent o bé són iguals)*/
 
             double num1, num2;
 

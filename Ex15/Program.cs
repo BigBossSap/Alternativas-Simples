@@ -1,27 +1,40 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+
+namespace Ex15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*15. Fes un programa que demani dos números qualssevol i després els mostri en ordre creixent.
+   Demana a i b, i escriu a i b. Ha de permutar el valor de les variables si cal.
+   */
+            int num1, num2, aux;
+            Console.WriteLine("num1:");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("num2: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 > num2)
+            {
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
+
+                Console.WriteLine($"Nuevo valor: {num1}, {num2}");
+            }
+
+            else
+                Console.WriteLine($"Nuevo valor: {num1}, {num2}");
 
 
-//DV
-
-double segundos, segundosRestantes, segundosRestantes2; 
-    
-double horas, minutos;
 
 
-//Valor
 
-Console.WriteLine("Introduce los segundos: ");
-segundos = Convert.ToInt32(Console.ReadLine());
+            
 
-//Algoritmos
+            
 
-horas =   Convert.ToInt32(segundos / (60 * 60));
-
-segundosRestantes = segundos % (60 * 60);
-
-minutos = Convert.ToInt32(segundosRestantes / 60);
-
-segundosRestantes2 = Convert.ToInt32(segundos % 60);
-
-Console.WriteLine(horas + " horas " + minutos + " minutos " + segundosRestantes2 + " segundos ");
-
+        }
+    }
+}
